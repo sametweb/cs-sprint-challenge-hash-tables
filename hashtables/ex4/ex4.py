@@ -5,7 +5,7 @@ def has_negatives(a):
         store[num] = num
 
     for key, value in store.items():
-        if key in store and key * -1 in store:
+        if key * -1 in store:
             result[abs(key)] = 1
 
     if result == {}:
